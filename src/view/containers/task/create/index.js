@@ -27,17 +27,17 @@ class CreateTaskScreen extends Component {
         <Text style={style.message}>Criar uma nova tarefa</Text>
         <View style={style.containerMain}>
           <TextInput underlineColorAndroid='#96989b' value={this.state.data.title}
-                     onChangeText={(text) => this.setState({title: text, error: ''})}
+                     onChangeText={(text) => this.setState({title: text})}
                      placeholder="Titulo" style={style.textInput}/>
         </View>
         <View style={style.containerMain}>
         <TextInput underlineColorAndroid='#96989b' value={this.state.data.description}
-                     onChangeText={(text) => this.setState({title: text, error: ''})}
+                     onChangeText={(text) => this.setState({title: text})}
                      placeholder="Descrição" style={style.textInput}/>
         </View>
         <View style={style.containerMain}>
         <TextInput underlineColorAndroid='#96989b' value={this.state.data.status}
-                     onChangeText={(text) => this.setState({status: text, error: ''})}
+                     onChangeText={(text) => this.setState({status: text})}
                      placeholder="Status" style={style.textInput}/>
         </View>
 
@@ -71,6 +71,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     onCreateTaskButtonClick: (data) => {
+      console.log(data)
         dispatch(TaskActions.createTask(data));
       },  
   };

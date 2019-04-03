@@ -40,13 +40,9 @@ export function getAllTasks() {
       dispatch({type: ACTION_IS_ON_REQUEST, payload: false});
 
       if(getAllTasks){
-        console.log(getAllTasks);
-        console.log(Object.keys(getAllTasks))
         for(var i in getAllTasks){
           
-          console.log('i viado', i)
         }
-console.log('aaal', );
 
         dispatch({
             type: ACTION_GET_ALL_TASK,

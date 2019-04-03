@@ -21,8 +21,8 @@ class Login extends Component {
     error: '',
     message: '',
     errorVisible: false,
-    username: 'renanc433@gmail.com',
-    password: 'stevejobs1',    
+    username: '',
+    password: '',    
   };
 
 

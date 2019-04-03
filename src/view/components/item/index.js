@@ -17,8 +17,7 @@ class TasklItem extends React.Component {
                 height={170}
                 borderRadius={0}>
 
-            <Text>
-              hue
+            <Text>teste
             </Text>
             
           </Card>
